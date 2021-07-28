@@ -100,6 +100,7 @@ export class GitMirrorTask {
             .arg(this.sourceGitRepositoryCloneDirectory)
             .arg("push")
             .arg("--mirror")
+            .arg("--force")
             .arg(authenticatedDestinationGitUrl)
             .exec();
     }
